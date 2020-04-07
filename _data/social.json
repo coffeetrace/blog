@@ -14,11 +14,6 @@
       "title": "Facebook",
       "icon": "fa-facebook",
       "url": "https://facebook.com/coffeetrace"
-    },
-    {
-      "title": "LinkedIn",
-      "icon": "fa-linkedin",
-      "url": "https://www.linkedin.com/"
     }
   ]
 }
