@@ -1,0 +1,40 @@
+---
+label: Post
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: The title of the post.
+    config:
+      required: true
+  - type: text
+    name: description
+    label: Description
+    description: The description used in meta tags.
+  - type: datetime
+    name: date
+    label: Date
+    description: The publish date of the post.
+    config:
+      required: true
+  - type: file
+    name: feature_image
+    label: Feature image
+    description: The featured image of the post.
+  - type: list
+    name: tags
+    label: Tags
+  - type: text
+    name: layout
+    label: Layout
+    hidden: true
+    default: post
+    config:
+      required: true
+pages:
+  - _posts/2019-01-01-the-advantages-and-disadvantages-of-working-from-home.md
+  - _posts/2019-01-02-set-up-your-new-iphone-6-the-Right-Way.md
+  - _posts/2019-01-03-basic-rules-for-walking-in-the-mountains.md
+  - _posts/2019-01-04-a-week-with-the-apple-watch.md
+  - _posts/2020-01-05-Graphic-Designer-On-The-Road.md

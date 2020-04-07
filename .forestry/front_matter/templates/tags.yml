@@ -1,0 +1,24 @@
+---
+label: Tags Page
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: The title of the tags page.
+    config:
+      required: true
+  - type: text
+    name: description
+    label: Description
+    description: The description used in meta tags.
+  - type: text
+    name: layout
+    label: Layout
+    hidden: true
+    default: tags
+    config:
+      required: true
+pages:
+  - tags.md
