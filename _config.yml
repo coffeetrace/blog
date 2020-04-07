@@ -1,11 +1,11 @@
 ---
-accent_color: "#71563E"
+accent_color: "#7A5A3A"
 lang: en-US
 title: CoffeeTrace
 description: An ecosystem of Coffee Plantations, Farmer, Collectives, Processors and
   Brands
 baseurl: ''
-url: https://coffeetraceblog.netlify.com
+url: https://blog.coffeetrace.io
 permalink: "/:title"
 favicon: "/images/favicon-128.png"
 google_analytics: ''
