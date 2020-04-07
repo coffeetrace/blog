@@ -1,5 +1,6 @@
 ---
 title: Tags
-description: A tags page for Scriptor Jekyll theme
+description: A tags page for CoffeeTrace Blog
 layout: tags
+
 ---
