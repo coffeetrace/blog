@@ -2,48 +2,57 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: admin
-webhook_url: 'https://api.stackbit.com/project/5e8c1cd9f740f50012e60f7b/webhook/forestry'
+webhook_url: https://api.stackbit.com/project/5e8c1cd9f740f50012e60f7b/webhook/forestry
 sections:
-  - type: document
-    label: Config
-    path: _config.yml
-    templates:
-      - config
-  - type: document
-    label: Author
-    path: _data/author.json
-    templates:
-      - author
-  - type: document
-    label: Social Links
-    path: _data/social.json
-    templates:
-      - social
-  - type: jekyll-posts
-    label: Post
-    create: all
-    templates:
-      - post
-  - type: directory
-    path: ''
-    match: '**/*.md'
-    exclude: '{_posts/**,README.md,LICENSE.md,tags.md,404.md}'
-    label: Page
-    create: all
-    templates:
-      - page
-  - type: document
-    label: Tags Page
-    path: tags.md
-    templates:
-      - tags
-  - type: document
-    label: 404 Page
-    path: 404.md
-    templates:
-      - notfound
+- type: document
+  path: _config.yml
+  label: Config
+  templates:
+  - config
+- type: document
+  path: _data/author.json
+  label: Author
+  templates:
+  - author
+- type: document
+  path: _data/social.json
+  label: Social Links
+  templates:
+  - social
+- type: jekyll-posts
+  label: Post
+  create: all
+  templates:
+  - post
+- type: directory
+  path: ''
+  label: Page
+  create: all
+  match: "**/*.md"
+  exclude: "{_posts/**,README.md,LICENSE.md,tags.md,404.md}"
+  templates:
+  - page
+- type: document
+  path: tags.md
+  label: Tags Page
+  templates:
+  - tags
+- type: document
+  path: 404.md
+  label: 404 Page
+  templates:
+  - notfound
 upload_dir: images
-public_path: /images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ':filename:'
+file_template: ":filename:"
+build:
+  preview_env:
+  - JEKYLL_ENV=staging
+  preview_output_directory: _site
+  install_dependencies_command: bundle install --path vendor/bundle
+  preview_docker_image: forestryio/ruby:2.6
+  mount_path: "/srv"
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
+    --port 8080 --host 0.0.0.0 -d _site

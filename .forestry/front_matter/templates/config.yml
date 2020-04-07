@@ -1,106 +1,104 @@
 ---
 label: Config
 hide_body: true
-is_partial: false
 fields:
-  - type: color
-    name: accent_color
-    label: Accent Color
-    description: The accent color of the theme.
+- type: color
+  name: accent_color
+  label: Accent Color
+  description: The accent color of the theme.
+  config:
+    required: true
+    color_format: Hex
+- type: text
+  name: lang
+  label: Site Language
+  description: The language of the site used in HTML lang attribute.
+- type: text
+  name: title
+  label: Site Title
+  description: The title displayed in the site header, title tag, search-engine results.
+- type: text
+  name: description
+  label: Description
+  description: The default description displayed in meta tags, search-engine results.
+- type: text
+  name: baseurl
+  label: Baseurl
+  description: The subpath of your site, e.g. /blog, for generating urls.
+- type: text
+  name: url
+  label: Url
+  description: The base hostname and protocol of your site for where absolute urls
+    are needed.
+- type: text
+  name: permalink
+  label: Permalink
+  description: The permalink pattern.
+- type: file
+  name: favicon
+  label: Favicon
+  description: The icon image associated with your website.
+- type: text
+  name: google_analytics
+  label: Google analytics
+  description: Google Analytics id.
+- type: text
+  name: disqus
+  label: Disqus Username
+  description: The shortname for your Disqus site to enable comments.
+- type: field_group_list
+  name: navigation
+  label: Header Navigation
+  fields:
+  - type: text
+    name: text
+    label: Title
     config:
       required: true
-      color_format: Hex
-  - type: text
-    name: lang
-    label: Site Language
-    description: The language of the site used in HTML lang attribute.
-  - type: text
-    name: title
-    label: Site Title
-    description: 'The title displayed in the site header, title tag, search-engine results.'
-  - type: text
-    name: description
-    label: Description
-    description: 'The default description displayed in meta tags, search-engine results.'
-  - type: text
-    name: baseurl
-    label: Baseurl
-    description: 'The subpath of your site, e.g. /blog, for generating urls.'
   - type: text
     name: url
-    label: Url
-    description: >-
-      The base hostname and protocol of your site for where absolute urls are
-      needed.
-  - type: text
-    name: permalink
-    label: Permalink
-    description: The permalink pattern.
-  - type: file
-    name: favicon
-    label: Favicon
-    description: The icon image associated with your website.
-  - type: text
-    name: google_analytics
-    label: Google analytics
-    description: Google Analytics id.
-  - type: text
-    name: disqus
-    label: Disqus Username
-    description: The shortname for your Disqus site to enable comments.
-  - type: field_group_list
-    name: navigation
-    label: Header Navigation
-    fields:
-      - type: text
-        name: text
-        label: Title
-        config:
-          required: true
-      - type: text
-        name: url
-        label: URL
+    label: URL
+  config:
+    labelField: text
+- type: field_group
+  name: footer
+  label: Footer Configuration
+  fields:
+  - type: textarea
+    name: content
+    label: Footer Content
+    description: The copyright text displayed in the footer.
     config:
-      labelField: text
-  - type: field_group
-    name: footer
-    label: Footer Configuration
-    fields:
-      - type: textarea
-        name: content
-        label: Footer Content
-        description: The copyright text displayed in the footer.
-        config:
-          wysiwyg: true
-          schema:
-            format: markdown
-      - type: boolean
-        name: has_social
-        label: Enable social links?
-        default: true
-  - type: list
-    name: plugins
-    label: Plugins
-  - type: number
-    name: paginate
-    label: Paginate
-    description: Number of posts per page.
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: boolean
+    name: has_social
+    label: Enable social links?
+    default: true
+- type: list
+  name: plugins
+  label: Plugins
+- type: number
+  name: paginate
+  label: Paginate
+  description: Number of posts per page.
+- type: text
+  name: paginate_path
+  label: Pagination Path
+  description: The destination of the pagination pages.
+- type: text
+  name: markdown
+  label: Markdown
+  hidden: true
+- type: field_group
+  name: sass
+  label: Sass Configuration
+  hidden: true
+  fields:
   - type: text
-    name: paginate_path
-    label: Pagination Path
-    description: The destination of the pagination pages.
+    name: sass_dir
+    label: Sass Files Directory
   - type: text
-    name: markdown
-    label: Markdown
-    hidden: true
-  - type: field_group
-    name: sass
-    label: Sass Configuration
-    hidden: true
-    fields:
-      - type: text
-        name: sass_dir
-        label: Sass Files Directory
-      - type: text
-        name: style
-        label: Style
+    name: style
+    label: Style

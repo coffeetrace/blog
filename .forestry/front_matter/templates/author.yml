@@ -1,29 +1,28 @@
 ---
 label: Author
 hide_body: true
-is_partial: false
 fields:
-  - type: text
-    name: name
-    label: Name
-    description: The name of the author.
-  - type: textarea
-    name: bio
-    label: Bio
-    description: The short bio of the author.
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
-  - type: text
-    name: url
-    label: URL
-    description: The URL of the author.
-  - type: text
-    name: location
-    label: Location
-    description: The location of the author.
-  - type: file
-    name: image
-    label: Avatar
-    description: The profile image of the author.
+- type: text
+  name: name
+  label: Name
+  description: The name of the author.
+- type: textarea
+  name: bio
+  label: Bio
+  description: The short bio of the author.
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: text
+  name: url
+  label: URL
+  description: The URL of the author.
+- type: text
+  name: location
+  label: Location
+  description: The location of the author.
+- type: file
+  name: image
+  label: Avatar
+  description: The profile image of the author.

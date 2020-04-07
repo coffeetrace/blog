@@ -1,31 +1,31 @@
 ---
 label: 404 Page
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the page.
-    config:
-      required: true
-  - type: text
-    name: description
-    label: Description
-    description: The description used in meta tags.
-  - type: file
-    name: feature_image
-    label: Feature image
-    description: The featured image of the page.
-  - type: text
-    name: permalink
-    label: Permalink
-    description: The permalink of the page.
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: page
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  description: The title of the page.
+  config:
+    required: true
+- type: text
+  name: description
+  label: Description
+  description: The description used in meta tags.
+- type: file
+  name: feature_image
+  label: Feature image
+  description: The featured image of the page.
+- type: text
+  name: permalink
+  label: Permalink
+  description: The permalink of the page.
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: page
+  config:
+    required: true
 pages:
-  - 404.md
+- 404.md
