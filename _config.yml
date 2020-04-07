@@ -11,7 +11,7 @@ favicon: "/images/favicon-128.png"
 google_analytics: ''
 disqus: coffeetrace
 navigation:
-- text: Home
+- text: Blog
   url: "/"
 - text: About
   url: "/about/"
