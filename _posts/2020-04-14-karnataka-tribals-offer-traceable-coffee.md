@@ -17,9 +17,7 @@ Presently, every stakeholder within the supply network maintains their own datab
 
 While food fraud is not new, the Current food safety management systems are designed to control one’s own organisation with limited ways to control, monitor or mitigate frauds at other stages of the supply chain.
 
-!\[\](https://miro.medium.com/max/46/1*hs4HgXdcgiHGzuCuN5XmWw.jpeg?q=20 =960x1280)
-
-![](https://miro.medium.com/max/960/1*hs4HgXdcgiHGzuCuN5XmWw.jpeg =960x1280)
+![](https://miro.medium.com/max/1000/1*hs4HgXdcgiHGzuCuN5XmWw.jpeg)
 
 Coffee trace tagging coffee at BR Hills Forest
 
