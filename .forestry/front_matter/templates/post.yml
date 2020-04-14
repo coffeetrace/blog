@@ -32,3 +32,5 @@ fields:
   default: post
   config:
     required: true
+pages:
+- _posts/karnataka-tribals-offer-traceable-coffee.md
