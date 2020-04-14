@@ -33,5 +33,5 @@ fields:
   config:
     required: true
 pages:
+- _posts/2020-04-01-test-article.md
 - _posts/karnataka-tribals-offer-traceable-coffee.md
-- _posts/test-article.md
