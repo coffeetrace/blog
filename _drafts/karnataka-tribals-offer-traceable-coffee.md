@@ -3,8 +3,10 @@ layout: post
 title: Karnataka Tribals offer Traceable Coffee
 description: ''
 date: 2020-04-14 00:00:00 +0530
-feature_image: ''
-tags: []
+feature_image: "/images/Coffee Trace Hero Image.jpg"
+tags:
+- specialitycoffee
+- coffeegrowers
 
 ---
 ###### For the first time, Tribal Growers in the remote districts of Karnataka sold Geo-Tagged Coffee with **CoffeeTrace**.
