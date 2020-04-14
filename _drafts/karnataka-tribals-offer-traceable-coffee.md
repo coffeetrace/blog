@@ -7,7 +7,7 @@ feature_image: ''
 tags: []
 
 ---
-## For the first time, Tribal Growers in the remote districts of Karnataka sold Geo-Tagged Coffee with **CoffeeTrace**.
+###### For the first time, Tribal Growers in the remote districts of Karnataka sold Geo-Tagged Coffee with **CoffeeTrace**.
 
 Presently, every stakeholder within the supply network maintains their own databases and systems, it becomes difficult to perform predictive monitoring and know what was done at different stages of the production.
 
