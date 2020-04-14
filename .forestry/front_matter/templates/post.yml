@@ -32,5 +32,3 @@ fields:
   default: post
   config:
     required: true
-pages:
-- _posts/2019-01-03-basic-rules-for-walking-in-the-mountains.md
