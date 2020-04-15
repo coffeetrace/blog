@@ -5,7 +5,7 @@ description: Current ERP systems are designed for visibility of only one step ba
   and one step forward (Supplier & Buyer) in the supply chain, making it impossible
   to identify the defaulter in case of a fraud or counterfeiting.
 date: 2020-04-14 00:00:00 +0530
-feature_image: "/images/Coffee Trace Hero Image.jpg"
+feature_image: "/images/Field Trial 2-1.jpg"
 tags:
 - specialitycoffee
 - coffeegrowers
